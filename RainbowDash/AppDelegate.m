@@ -3,14 +3,14 @@
 //  RainbowDash
 //
 //  Created by Michael Victor Zink on 5/2/11.
-//  Copyright University of Chicago 2011. All rights reserved.
+//  Copyright Michael Victor Zink 2011. All rights reserved.
 //
 
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
 #import "GameConfig.h"
-#import "HelloWorldLayer.h"
+#import "RDMainMenu.h"
 #import "RootViewController.h"
 
 @implementation AppDelegate
@@ -110,7 +110,7 @@
 	[self removeStartupFlicker];
 	
 	// Run the intro Scene
-	[[CCDirector sharedDirector] runWithScene: [HelloWorldLayer scene]];
+	[[CCDirector sharedDirector] runWithScene: [RDMainMenu scene]];
 }
 
 
