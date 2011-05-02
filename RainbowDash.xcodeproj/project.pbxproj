@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A513E7A136F519A0032A30D /* skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A513E79136F519A0032A30D /* skyline.jpg */; };
+		0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A513E7C136F51B30032A30D /* RDGameBackground.m */; };
 		0A5A36F2136F40A000DF5043 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F1136F40A000DF5043 /* QuartzCore.framework */; };
 		0A5A36F4136F40A000DF5043 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F3136F40A000DF5043 /* OpenGLES.framework */; };
 		0A5A36F6136F40A000DF5043 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F5136F40A000DF5043 /* OpenAL.framework */; };
@@ -129,9 +131,13 @@
 		0A5A3864136F420D00DF5043 /* stars2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A3863136F420D00DF5043 /* stars2.png */; };
 		0A5A3867136F423400DF5043 /* RDHudLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3866136F423300DF5043 /* RDHudLayer.m */; };
 		0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386A136F42D700DF5043 /* RDMainMenu.m */; };
+		0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386C136F4BB900DF5043 /* RDUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A513E79136F519A0032A30D /* skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyline.jpg; sourceTree = "<group>"; };
+		0A513E7B136F51B30032A30D /* RDGameBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDGameBackground.h; sourceTree = "<group>"; };
+		0A513E7C136F51B30032A30D /* RDGameBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDGameBackground.m; sourceTree = "<group>"; };
 		0A5A36ED136F40A000DF5043 /* RainbowDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A36F1136F40A000DF5043 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A36F3136F40A000DF5043 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -376,6 +382,8 @@
 		0A5A3866136F423300DF5043 /* RDHudLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHudLayer.m; sourceTree = "<group>"; };
 		0A5A3869136F42D700DF5043 /* RDMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainMenu.h; sourceTree = "<group>"; };
 		0A5A386A136F42D700DF5043 /* RDMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainMenu.m; sourceTree = "<group>"; };
+		0A5A386C136F4BB900DF5043 /* RDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDUtil.m; sourceTree = "<group>"; };
+		0A5A386D136F4BBA00DF5043 /* RDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,10 +450,14 @@
 				0A5A3852136F40A200DF5043 /* HelloWorldLayer.h */,
 				0A5A3853136F40A200DF5043 /* HelloWorldLayer.m */,
 				0A5A3855136F40A200DF5043 /* GameConfig.h */,
-				0A5A3865136F423200DF5043 /* RDHudLayer.h */,
-				0A5A3866136F423300DF5043 /* RDHudLayer.m */,
 				0A5A3869136F42D700DF5043 /* RDMainMenu.h */,
 				0A5A386A136F42D700DF5043 /* RDMainMenu.m */,
+				0A5A3865136F423200DF5043 /* RDHudLayer.h */,
+				0A5A3866136F423300DF5043 /* RDHudLayer.m */,
+				0A513E7B136F51B30032A30D /* RDGameBackground.h */,
+				0A513E7C136F51B30032A30D /* RDGameBackground.m */,
+				0A5A386C136F4BB900DF5043 /* RDUtil.m */,
+				0A5A386D136F4BBA00DF5043 /* RDUtil.h */,
 			);
 			path = RainbowDash;
 			sourceTree = "<group>";
@@ -453,6 +465,7 @@
 		0A5A3702136F40A000DF5043 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0A513E79136F519A0032A30D /* skyline.jpg */,
 				0A5A3863136F420D00DF5043 /* stars2.png */,
 				0A5A385B136F41F500DF5043 /* stars-grayscale.png */,
 				0A5A385C136F41F500DF5043 /* stars.png */,
@@ -767,7 +780,7 @@
 		0A5A36E4136F40A000DF5043 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				ORGANIZATIONNAME = "University of Chicago";
+				ORGANIZATIONNAME = "Michael Victor Zink";
 			};
 			buildConfigurationList = 0A5A36E7136F40A000DF5043 /* Build configuration list for PBXProject "RainbowDash" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -805,6 +818,7 @@
 				0A5A3861136F41F800DF5043 /* stars2_mini.png in Resources */,
 				0A5A3862136F41F800DF5043 /* stars2-grayscale.png in Resources */,
 				0A5A3864136F420D00DF5043 /* stars2.png in Resources */,
+				0A513E7A136F519A0032A30D /* skyline.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +929,8 @@
 				0A5A3854136F40A200DF5043 /* HelloWorldLayer.m in Sources */,
 				0A5A3867136F423400DF5043 /* RDHudLayer.m in Sources */,
 				0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */,
+				0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */,
+				0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1008,6 +1024,7 @@
 				0A5A385A136F40A200DF5043 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

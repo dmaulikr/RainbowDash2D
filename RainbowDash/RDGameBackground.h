@@ -1,5 +1,5 @@
 //
-//  RDMainMenu.h
+//  RDGameBackground.h
 //  RainbowDash
 //
 //  Created by Michael Victor Zink on 5/2/11.
@@ -9,12 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface RDMainMenu : CCLayer {
-    CCLabelTTF * button;
+@interface RDGameBackground : CCLayer {
+    
 }
-
-+ (CCScene *) scene;
-
-- (void) startGame;
 
 @end

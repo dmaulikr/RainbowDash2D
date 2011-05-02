@@ -7,6 +7,9 @@
 //
 
 #import "RDMainMenu.h"
+#import "RDUtil.h"
+#import "RDHudLayer.h"
+#import "RDGameBackground.h"
 
 
 @implementation RDMainMenu
@@ -26,11 +29,38 @@
 		label.position = ccpAdd(center, ccp(0.0, 40.0));
 		[self addChild: label];
 
-		CCLabelTTF * button = [CCLabelTTF labelWithString: @"Start" fontName: @"Palatino-Roman" fontSize: 34.0];
+		button = [CCLabelTTF labelWithString: @"Start" fontName: @"Palatino-Roman" fontSize: 34.0];
 		button.position = ccpSub(center, ccp(0.0, 50.0));
-		[self addChild: button];
+		[self addChild: [button retain]];
+
+		self.isTouchEnabled = YES;
 	}
 	return self;
+}
+
+- (void) ccTouchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
+	UITouch * touch = [touches anyObject];
+	CGPoint loc = [self convertTouchToNodeSpace: touch];
+	CGRect bounds = CGRectMake(button.position.x, button.position.y,
+							   button.contentSize.width, button.contentSize.height);
+	if (ccpInRect(loc, bounds)) {
+		// The touch landed in the bounds for the start "button"
+		[self startGame];
+	}
+}
+
+- (void) startGame {
+	CCScene * scene = [CCScene node];
+	RDGameBackground * bg = [RDGameBackground node];
+	RDHudLayer * hud = [RDHudLayer node];
+	[scene addChild: bg z: 1];
+	[scene addChild: hud z: 2];
+	[[CCDirector sharedDirector] replaceScene: scene];
+}
+
+- (void) dealloc {
+	[button release];
+	[super dealloc];
 }
 
 @end
