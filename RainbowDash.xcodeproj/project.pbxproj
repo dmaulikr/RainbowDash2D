@@ -123,13 +123,12 @@
 		0A5A384B136F40A200DF5043 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A384A136F40A200DF5043 /* main.m */; };
 		0A5A384E136F40A200DF5043 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A384D136F40A200DF5043 /* AppDelegate.m */; };
 		0A5A3851136F40A200DF5043 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3850136F40A200DF5043 /* RootViewController.m */; };
-		0A5A3854136F40A200DF5043 /* HelloWorldLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3853136F40A200DF5043 /* HelloWorldLayer.m */; };
 		0A5A385F136F41F800DF5043 /* stars-grayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A385B136F41F500DF5043 /* stars-grayscale.png */; };
 		0A5A3860136F41F800DF5043 /* stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A385C136F41F500DF5043 /* stars.png */; };
 		0A5A3861136F41F800DF5043 /* stars2_mini.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A385D136F41F600DF5043 /* stars2_mini.png */; };
 		0A5A3862136F41F800DF5043 /* stars2-grayscale.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A385E136F41F700DF5043 /* stars2-grayscale.png */; };
 		0A5A3864136F420D00DF5043 /* stars2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A3863136F420D00DF5043 /* stars2.png */; };
-		0A5A3867136F423400DF5043 /* RDHudLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3866136F423300DF5043 /* RDHudLayer.m */; };
+		0A5A3867136F423400DF5043 /* RDHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3866136F423300DF5043 /* RDHud.m */; };
 		0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386A136F42D700DF5043 /* RDMainMenu.m */; };
 		0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386C136F4BB900DF5043 /* RDUtil.m */; };
 /* End PBXBuildFile section */
@@ -370,16 +369,14 @@
 		0A5A384D136F40A200DF5043 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0A5A384F136F40A200DF5043 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		0A5A3850136F40A200DF5043 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		0A5A3852136F40A200DF5043 /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
-		0A5A3853136F40A200DF5043 /* HelloWorldLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldLayer.m; sourceTree = "<group>"; };
 		0A5A3855136F40A200DF5043 /* GameConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		0A5A385B136F41F500DF5043 /* stars-grayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-grayscale.png"; sourceTree = "<group>"; };
 		0A5A385C136F41F500DF5043 /* stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars.png; sourceTree = "<group>"; };
 		0A5A385D136F41F600DF5043 /* stars2_mini.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars2_mini.png; sourceTree = "<group>"; };
 		0A5A385E136F41F700DF5043 /* stars2-grayscale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars2-grayscale.png"; sourceTree = "<group>"; };
 		0A5A3863136F420D00DF5043 /* stars2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars2.png; sourceTree = "<group>"; };
-		0A5A3865136F423200DF5043 /* RDHudLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHudLayer.h; sourceTree = "<group>"; };
-		0A5A3866136F423300DF5043 /* RDHudLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHudLayer.m; sourceTree = "<group>"; };
+		0A5A3865136F423200DF5043 /* RDHud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDHud.h; sourceTree = "<group>"; };
+		0A5A3866136F423300DF5043 /* RDHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHud.m; sourceTree = "<group>"; };
 		0A5A3869136F42D700DF5043 /* RDMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainMenu.h; sourceTree = "<group>"; };
 		0A5A386A136F42D700DF5043 /* RDMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainMenu.m; sourceTree = "<group>"; };
 		0A5A386C136F4BB900DF5043 /* RDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDUtil.m; sourceTree = "<group>"; };
@@ -447,13 +444,11 @@
 				0A5A384D136F40A200DF5043 /* AppDelegate.m */,
 				0A5A384F136F40A200DF5043 /* RootViewController.h */,
 				0A5A3850136F40A200DF5043 /* RootViewController.m */,
-				0A5A3852136F40A200DF5043 /* HelloWorldLayer.h */,
-				0A5A3853136F40A200DF5043 /* HelloWorldLayer.m */,
 				0A5A3855136F40A200DF5043 /* GameConfig.h */,
 				0A5A3869136F42D700DF5043 /* RDMainMenu.h */,
 				0A5A386A136F42D700DF5043 /* RDMainMenu.m */,
-				0A5A3865136F423200DF5043 /* RDHudLayer.h */,
-				0A5A3866136F423300DF5043 /* RDHudLayer.m */,
+				0A5A3865136F423200DF5043 /* RDHud.h */,
+				0A5A3866136F423300DF5043 /* RDHud.m */,
 				0A513E7B136F51B30032A30D /* RDGameBackground.h */,
 				0A513E7C136F51B30032A30D /* RDGameBackground.m */,
 				0A5A386C136F4BB900DF5043 /* RDUtil.m */,
@@ -926,8 +921,7 @@
 				0A5A384B136F40A200DF5043 /* main.m in Sources */,
 				0A5A384E136F40A200DF5043 /* AppDelegate.m in Sources */,
 				0A5A3851136F40A200DF5043 /* RootViewController.m in Sources */,
-				0A5A3854136F40A200DF5043 /* HelloWorldLayer.m in Sources */,
-				0A5A3867136F423400DF5043 /* RDHudLayer.m in Sources */,
+				0A5A3867136F423400DF5043 /* RDHud.m in Sources */,
 				0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */,
 				0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */,
 				0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */,

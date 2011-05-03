@@ -8,7 +8,7 @@
 
 #import "RDMainMenu.h"
 #import "RDUtil.h"
-#import "RDHudLayer.h"
+#import "RDHud.h"
 #import "RDGameBackground.h"
 
 
@@ -41,7 +41,7 @@
 - (void) startGame {
 	CCScene * scene = [CCScene node];
 	RDGameBackground * bg = [RDGameBackground node];
-	RDHudLayer * hud = [RDHudLayer node];
+	RDHud * hud = [RDHud node];
 	[scene addChild: bg z: 1];
 	[scene addChild: hud z: 2];
 	[[CCDirector sharedDirector] replaceScene: scene];
