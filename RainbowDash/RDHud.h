@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-
 @interface RDHud : CCLayer {
     CCLabelTTF * label;
+	CCLabelAtlas * scoreLabel;
 }
+
+@property(nonatomic, assign) CCLabelAtlas * scoreLabel;
 
 @end

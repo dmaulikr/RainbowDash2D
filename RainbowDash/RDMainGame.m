@@ -7,10 +7,13 @@
 //
 
 #import "RDMainGame.h"
+#import "RDHud.h"
 
 #define RANDFR ((arc4random() / ((pow(2,32))-1)))
 
 @implementation RDMainGame
+
+@synthesize hud;
 
 - (id) init {
 	if ((self = [super init])) {
@@ -22,6 +25,7 @@
 		self.isTouchEnabled = YES;
 
 		clouds = [[NSMutableArray array] retain];
+
 		score = 0;
 	}
 	return self;
@@ -41,6 +45,9 @@
 	for (CCSprite * cloud in [clouds copy]) {
 		if (CGRectContainsRect([player boundingBox],[cloud boundingBox])) {
 			score += cloud.scale * 100;
+			if (self.hud) {
+				[hud.scoreLabel setString: [NSString stringWithFormat: @"%d", score]];
+			}
 			[clouds removeObject: cloud];
 			[self removeChild: cloud cleanup: YES];
 		}

@@ -9,13 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
+@class RDHud;
 
 @interface RDMainGame : CCLayer {
     CCSprite * player;
 	CGPoint lastTouch;
-	NSMutableArray * clouds;
 	NSInteger score;
+	NSMutableArray * clouds;
+	RDHud * hud;
 }
+
+@property(nonatomic, retain) RDHud * hud;
 
 - (void) spawnCloud: (ccTime) dt;
 

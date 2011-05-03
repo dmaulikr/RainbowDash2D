@@ -43,6 +43,7 @@
 	RDGameBackground * bg = [RDGameBackground node];
 	RDMainGame * game = [RDMainGame node];
 	RDHud * hud = [RDHud node];
+	game.hud = hud;
 	[scene addChild: bg z: 1];
 	[scene addChild: game z: 2];
 	[scene addChild: hud z: 3];
