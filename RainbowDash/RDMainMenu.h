@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
 
-@interface RDMainMenu : CCLayer {
-    CCLabelTTF * button;
-}
+@interface RDMainMenu : CCLayer
 
 + (CCScene *) scene;
 
+- (void) menuStartItemPressed: (CCMenuItem *) menuItem;
 - (void) startGame;
 
 @end

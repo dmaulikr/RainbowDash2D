@@ -22,31 +22,20 @@
 
 - (id) init {
 	if ((self = [super init])) {
-		CGSize size = [[CCDirector sharedDirector] winSize];
-		CGPoint center = ccp(size.width / 2.0, size.height / 2.0);
-
-		CCLabelTTF * label = [CCLabelTTF labelWithString: @"Rainbow Dash 2D" fontName: @"Palatino-Roman" fontSize: 44.0];
-		label.position = ccpAdd(center, ccp(0.0, 40.0));
-		[self addChild: label];
-
-		button = [CCLabelTTF labelWithString: @"Start" fontName: @"Palatino-Roman" fontSize: 34.0];
-		button.position = ccpSub(center, ccp(0.0, 50.0));
-		[self addChild: [button retain]];
-
-		self.isTouchEnabled = YES;
+		CCLabelTTF * titleLabel = [CCLabelTTF labelWithString: @"Rainbow Dash 2D" fontName: @"Palatino-Roman" fontSize: 34.0];
+		CCLabelTTF * startLabel = [CCLabelTTF labelWithString: @"Start!" fontName: @"Palatino-Roman" fontSize: 26.0];
+		CCMenu * menu = [CCMenu menuWithItems:
+						 [CCMenuItemLabel itemWithLabel: titleLabel],
+						 [CCMenuItemLabel itemWithLabel: startLabel target: self selector: @selector(menuStartItemPressed:)],
+						 nil];
+		[menu alignItemsVerticallyWithPadding: 30.0];
+		[self addChild: menu];
 	}
 	return self;
 }
 
-- (void) ccTouchesEnded: (NSSet *) touches withEvent: (UIEvent *) event {
-	UITouch * touch = [touches anyObject];
-	CGPoint loc = [self convertTouchToNodeSpace: touch];
-	CGRect bounds = CGRectMake(button.position.x, button.position.y,
-							   button.contentSize.width, button.contentSize.height);
-	if (ccpInRect(loc, bounds)) {
-		// The touch landed in the bounds for the start "button"
-		[self startGame];
-	}
+- (void) menuStartItemPressed: (CCMenuItem *) menuItem {
+	[self startGame];
 }
 
 - (void) startGame {
@@ -59,7 +48,6 @@
 }
 
 - (void) dealloc {
-	[button release];
 	[super dealloc];
 }
 
