@@ -11,7 +11,7 @@
 
 
 @interface RDHud : CCLayer {
-    
+    CCLabelTTF * label;
 }
 
 @end

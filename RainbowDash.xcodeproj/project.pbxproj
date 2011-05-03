@@ -131,7 +131,6 @@
 		0A5A3864136F420D00DF5043 /* stars2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A5A3863136F420D00DF5043 /* stars2.png */; };
 		0A5A3867136F423400DF5043 /* RDHud.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A3866136F423300DF5043 /* RDHud.m */; };
 		0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386A136F42D700DF5043 /* RDMainMenu.m */; };
-		0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A386C136F4BB900DF5043 /* RDUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -382,8 +381,6 @@
 		0A5A3866136F423300DF5043 /* RDHud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDHud.m; sourceTree = "<group>"; };
 		0A5A3869136F42D700DF5043 /* RDMainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainMenu.h; sourceTree = "<group>"; };
 		0A5A386A136F42D700DF5043 /* RDMainMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainMenu.m; sourceTree = "<group>"; };
-		0A5A386C136F4BB900DF5043 /* RDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDUtil.m; sourceTree = "<group>"; };
-		0A5A386D136F4BBA00DF5043 /* RDUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,8 +451,6 @@
 				0A5A3866136F423300DF5043 /* RDHud.m */,
 				0A513E7B136F51B30032A30D /* RDGameBackground.h */,
 				0A513E7C136F51B30032A30D /* RDGameBackground.m */,
-				0A5A386C136F4BB900DF5043 /* RDUtil.m */,
-				0A5A386D136F4BBA00DF5043 /* RDUtil.h */,
 				0A513E94136FA4770032A30D /* RDMainGame.h */,
 				0A513E95136FA4770032A30D /* RDMainGame.m */,
 			);
@@ -928,7 +923,6 @@
 				0A5A3851136F40A200DF5043 /* RootViewController.m in Sources */,
 				0A5A3867136F423400DF5043 /* RDHud.m in Sources */,
 				0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */,
-				0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */,
 				0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */,
 				0A513E96136FA4770032A30D /* RDMainGame.m in Sources */,
 			);
