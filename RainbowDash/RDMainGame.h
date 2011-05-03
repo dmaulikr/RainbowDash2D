@@ -13,6 +13,10 @@
 @interface RDMainGame : CCLayer {
     CCSprite * player;
 	CGPoint lastTouch;
+	NSMutableArray * clouds;
+	NSInteger score;
 }
+
+- (void) spawnCloud: (ccTime) dt;
 
 @end
