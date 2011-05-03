@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A513E7A136F519A0032A30D /* skyline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A513E79136F519A0032A30D /* skyline.jpg */; };
 		0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A513E7C136F51B30032A30D /* RDGameBackground.m */; };
+		0A513E96136FA4770032A30D /* RDMainGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A513E95136FA4770032A30D /* RDMainGame.m */; };
 		0A5A36F2136F40A000DF5043 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F1136F40A000DF5043 /* QuartzCore.framework */; };
 		0A5A36F4136F40A000DF5043 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F3136F40A000DF5043 /* OpenGLES.framework */; };
 		0A5A36F6136F40A000DF5043 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5A36F5136F40A000DF5043 /* OpenAL.framework */; };
@@ -137,6 +138,8 @@
 		0A513E79136F519A0032A30D /* skyline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skyline.jpg; sourceTree = "<group>"; };
 		0A513E7B136F51B30032A30D /* RDGameBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDGameBackground.h; sourceTree = "<group>"; };
 		0A513E7C136F51B30032A30D /* RDGameBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDGameBackground.m; sourceTree = "<group>"; };
+		0A513E94136FA4770032A30D /* RDMainGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDMainGame.h; sourceTree = "<group>"; };
+		0A513E95136FA4770032A30D /* RDMainGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDMainGame.m; sourceTree = "<group>"; };
 		0A5A36ED136F40A000DF5043 /* RainbowDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainbowDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A36F1136F40A000DF5043 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0A5A36F3136F40A000DF5043 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -453,6 +456,8 @@
 				0A513E7C136F51B30032A30D /* RDGameBackground.m */,
 				0A5A386C136F4BB900DF5043 /* RDUtil.m */,
 				0A5A386D136F4BBA00DF5043 /* RDUtil.h */,
+				0A513E94136FA4770032A30D /* RDMainGame.h */,
+				0A513E95136FA4770032A30D /* RDMainGame.m */,
 			);
 			path = RainbowDash;
 			sourceTree = "<group>";
@@ -925,6 +930,7 @@
 				0A5A386B136F42D800DF5043 /* RDMainMenu.m in Sources */,
 				0A5A386E136F4BBC00DF5043 /* RDUtil.m in Sources */,
 				0A513E7D136F51B30032A30D /* RDGameBackground.m in Sources */,
+				0A513E96136FA4770032A30D /* RDMainGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

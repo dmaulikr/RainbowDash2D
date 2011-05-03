@@ -10,6 +10,7 @@
 #import "RDUtil.h"
 #import "RDHud.h"
 #import "RDGameBackground.h"
+#import "RDMainGame.h"
 
 
 @implementation RDMainMenu
@@ -41,9 +42,11 @@
 - (void) startGame {
 	CCScene * scene = [CCScene node];
 	RDGameBackground * bg = [RDGameBackground node];
+	RDMainGame * game = [RDMainGame node];
 	RDHud * hud = [RDHud node];
 	[scene addChild: bg z: 1];
-	[scene addChild: hud z: 2];
+	[scene addChild: game z: 2];
+	[scene addChild: hud z: 3];
 	[[CCDirector sharedDirector] replaceScene: scene];
 }
 
